@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: git@github.com:YonierGomez/mcp-argocd-test.git
+    repoURL: https://github.com/YonierGomez/mcp-argocd-test.git
     targetRevision: HEAD
     path: httpd-app/k8s
   destination:
