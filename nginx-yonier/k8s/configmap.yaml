@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index
+  namespace: yonierpro-dev
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Bienvenido a YonierPro</title>
+    <style>
+      body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+      }
+    </style>
+    </head>
+    <body>
+    <h1>Bienvenido a YonierPro Nginx en ArgoCD!</h1>
+    <p>Si ves esta página, el servidor web de Nginx está funcionando 
+    correctamente y ha sido desplegado con ArgoCD en sincronización manual.</p>
+    
+    <p>Para más información sobre Nginx, por favor visite:
+    <a href="https://nginx.org/">nginx.org</a>.<br/>
+    
+    <p><em>Gracias por usar Nginx en ArgoCD.</em></p>
+    </body>
+    </html>
